@@ -12,10 +12,13 @@ public class OrderServerImpl implements OrderServer {
 	public List<Order> getAll() {
 		return odi.getAll();
 	}
+<<<<<<< HEAD
 	@Override
 	public List<Order> getAllById(int id, int pageindex, int pagecount) {
 		return odi.getAllById(id, pageindex, pagecount);
 	}
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 	@Override
 	public int add(Order ord) {
@@ -26,11 +29,14 @@ public class OrderServerImpl implements OrderServer {
 	public int delete(int id) {
 		return odi.delete(id);
 	}
+<<<<<<< HEAD
 	@Override
 	public int getCount(int id) {
 		return odi.getCount(id);
 	}
 
 	
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 }

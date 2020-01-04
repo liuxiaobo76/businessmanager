@@ -6,7 +6,11 @@ h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 
 /* 去掉列表默认的图标 */
 ul,ol{list-style:none;}
+<<<<<<< HEAD
 li{color: #a8a8a8;font-size:14px}
+=======
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 /* 去掉em默认的斜体 */
 em{font-style: normal;}
 
@@ -21,6 +25,7 @@ img{border:0;}
 .clearfix:before,.clearfix:after{content:"";display:table}
 .clearfix:after{clear:both;}
 .clearfix{zoom:1}
+<<<<<<< HEAD
 .li{
 	margin-left:28px;
 }
@@ -45,3 +50,9 @@ img{border:0;}
 .fl{float:left}
 .fr{float:right}
 select{} 
+=======
+
+/* 浮动 */
+.fl{float:left}
+.fr{float:right}
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808

@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+<<<<<<< HEAD
 import javax.servlet.http.HttpSession;
 
 import com.alibaba.fastjson.JSON;
@@ -19,6 +20,13 @@ import cn.com.kgc.tancoo.businessmanager.entity.ShoppingTrolley;
 import cn.com.kgc.tancoo.businessmanager.entity.User;
 import cn.com.kgc.tancoo.businessmanager.server.impl.ProductServerImpl;
 import cn.com.kgc.tancoo.businessmanager.server.impl.ShoppingTrolleyServerImpl;
+=======
+
+
+
+import cn.com.kgc.tancoo.businessmanager.entity.Product;
+import cn.com.kgc.tancoo.businessmanager.server.impl.ProductServerImpl;
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 /**
  * Servlet implementation class DoList1
@@ -33,8 +41,11 @@ public class DoList1 extends HttpServlet {
 		String index = request.getParameter("pageindex");
 		PrintWriter out = response.getWriter();
 		String opr = request.getParameter("opr");
+<<<<<<< HEAD
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute("user");//用户的登陆账号
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		int pageindex = 1;
 		if(index!=null) {
 			pageindex=Integer.parseInt(index);
@@ -43,10 +54,14 @@ public class DoList1 extends HttpServlet {
 		ProductServerImpl psi = new ProductServerImpl();
 		int count = psi.getCount(name);
 		System.out.println();
+<<<<<<< HEAD
 		int pagecount = 15;
 		ShoppingTrolleyServerImpl stsi = new ShoppingTrolleyServerImpl();
 		List<ShoppingTrolley> shoplist = stsi.getAlById(user.getUserId());//获取当前用户的购物车列表
 		request.setAttribute("size", shoplist.size());
+=======
+		int pagecount = 2;
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		int totalpage = count%pagecount==0?count/pagecount:count/pagecount+1;
 		List<Product> list = psi.getAllByType(name,pageindex, pagecount);
 		request.setAttribute("pageindex", pageindex);

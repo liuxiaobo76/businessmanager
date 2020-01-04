@@ -22,6 +22,7 @@ public class User {
 	private int userType;//用户身份（买家3，卖家4）
 	private int userStatus;//登陆状态 默认0正常1禁用
 	private String userStatu;//用户身份具体名字
+<<<<<<< HEAD
 	
 	public User(int userId, String userName, String userPwd, String userAddr, String userPhone, String userTruename,
 			String userSex, String userBirthday, Date userRegtime, int userType, int userStatus) {
@@ -38,4 +39,7 @@ public class User {
 		this.userType = userType;
 		this.userStatus = userStatus;
 	}
+=======
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

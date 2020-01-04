@@ -26,6 +26,7 @@ public class AdminServerImpl implements AdminServer{
 	public int update(Admin adm) {
 		return ad.update(adm);
 	}
+<<<<<<< HEAD
 	@Override
 	public Admin login(String adminName, String adminPwd) {
 		return ad.login(adminName, adminPwd);
@@ -58,5 +59,7 @@ public class AdminServerImpl implements AdminServer{
 	public int updateAdmin(Admin a) {
 		return ad.updateAdmin(a);
 	}
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 	
 }

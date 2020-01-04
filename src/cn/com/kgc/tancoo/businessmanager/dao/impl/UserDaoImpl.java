@@ -110,6 +110,7 @@ public class UserDaoImpl implements UserDao {
 	public void test3() {
 		System.out.println(update(new User(4,"哈哈","","","","","","s",new Date(),3,0,"")));
 	}
+<<<<<<< HEAD
 	@Override
 	public int queryPhone(String phone) {
 		String sql="select COUNT(*) from userinfo where userPhone =?";
@@ -226,4 +227,6 @@ public class UserDaoImpl implements UserDao {
 			return null;
 		}
 	}
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

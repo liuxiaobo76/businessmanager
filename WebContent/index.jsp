@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 <%@ page import="cn.com.kgc.tancoo.businessmanager.entity.User"%>
+=======
+<%@page import="cn.com.kgc.tancoo.businessmanager.entity.User"%>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+<<<<<<< HEAD
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<title>天天生鲜-首页</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+=======
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>天天生鲜-首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/slide.js"></script>
@@ -21,6 +32,7 @@
 		<div class="header">
 			<div class="welcome fl">欢迎来到天天生鲜!</div>
 			<div class="fr">
+<<<<<<< HEAD
 				<c:if test="${!empty user }">
 				<div class="login_info fl">
 					欢迎您：<em class="login_info1">${user.userName}&nbsp;</em>
@@ -32,22 +44,38 @@
 					<c:if test="${empty user}">
 					<a href="login.jsp">登录</a>
 					</c:if>
+=======
+				<div class="login_info fl">
+					欢迎您：<em class="login_info1">${user.userName}&nbsp;</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="login.jsp">登录</a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 					<span>|</span>
 					<a href="register.jsp">注册</a>
 				</div>
 				<div class="user_link fl">
 					<span>|</span>
+<<<<<<< HEAD
 					<a href="DoUser_center_info">用户中心</a>
 					<span>|</span>
 					<a href="DoCart">我的购物车</a>
 					<span>|</span>
 					<a href="DoUser_center_order">我的订单</a>
+=======
+					<a href="user_center_info.html">用户中心</a>
+					<span>|</span>
+					<a href="cart.html">我的购物车</a>
+					<span>|</span>
+					<a href="user_center_order.html">我的订单</a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				</div>
 			</div>
 		</div>		
 	</div>
 
 	<div class="search_bar clearfix">
+<<<<<<< HEAD
 		<a href="DoIndex" class="logo fl"><img src="images/logo.png"/></a>
 		<form action="DoList" method="post">
 		<div class="search_con fl">
@@ -58,6 +86,18 @@
 		<div class="guest_cart fr">
 			<a href="DoCart" class="cart_name fl">我的购物车</a>
 			<div class="goods_count fl" id="show_count">${size}</div>
+=======
+		<a href="index.html" class="logo fl"><img src="images/logo.png"></a>
+		<form action="DoList" method="post">
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="search" placeholder="搜索商品">
+			<input type="submit" class="input_btn fr" name="" value="搜索">
+		</form>
+		</div>
+		<div class="guest_cart fr">
+			<a href="#" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl" id="show_count">1</div>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		</div>
 	</div>
 
@@ -67,9 +107,15 @@
 			<ul class="navlist fl">
 				<li><a href="">首页</a></li>
 				<li class="interval">|</li>
+<<<<<<< HEAD
 				<li><a href="index1.jsp">商家登陆</a></li>
 				<li class="interval">|</li>
 				<li><a href="HOUTAI/login.jsp">管理员登陆</a></li>
+=======
+				<li><a href="">手机生鲜</a></li>
+				<li class="interval">|</li>
+				<li><a href="">抽奖</a></li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -85,18 +131,30 @@
 		</ul>
 		<div class="slide fl">
 			<ul class="slide_pics">
+<<<<<<< HEAD
 				<li><img src="images/slide.jpg" alt="幻灯片"/></li>
 				<li><img src="images/slide02.jpg" alt="幻灯片"/></li>
 				<li><img src="images/slide03.jpg" alt="幻灯片"/></li>
 				<li><img src="images/slide04.jpg" alt="幻灯片"/></li>
+=======
+				<li><img src="images/slide.jpg" alt="幻灯片"></li>
+				<li><img src="images/slide02.jpg" alt="幻灯片"></li>
+				<li><img src="images/slide03.jpg" alt="幻灯片"></li>
+				<li><img src="images/slide04.jpg" alt="幻灯片"></li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 			<div class="prev"></div>
 			<div class="next"></div>
 			<ul class="points"></ul>
 		</div>
 		<div class="adv fl">
+<<<<<<< HEAD
 			<a href="#"><img src="images/adv01.jpg"/></a>
 			<a href="#"><img src="images/adv02.jpg"/></a>
+=======
+			<a href="#"><img src="images/adv01.jpg"></a>
+			<a href="#"><img src="images/adv02.jpg"></a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		</div>
 	</div>
 
@@ -113,6 +171,7 @@
 		</div>
 
 		<div class="goods_con clearfix">
+<<<<<<< HEAD
 			<div class="goods_banner fl"><img src="images/banner01.jpg"/></div>
 			<ul class="goods_list fl">
 				<c:forEach items="${list1}" var="item">
@@ -122,6 +181,30 @@
 					<div class="prize">¥${item.proPrice}</div>
 				</li>
 				</c:forEach>
+=======
+			<div class="goods_banner fl"><img src="images/banner01.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">草莓</a></h4>
+					<a href="#"><img src="images/goods/goods003.jpg"></a>
+					<div class="prize">¥ 30.00</div>
+				</li>
+				<li>
+					<h4><a href="#">葡萄</a></h4>
+					<a href="#"><img src="images/goods/goods002.jpg"></a>
+					<div class="prize">¥ 5.50</div>
+				</li>
+				<li>
+					<h4><a href="#">柠檬</a></h4>
+					<a href="#"><img src="images/goods/goods001.jpg"></a>
+					<div class="prize">¥ 3.90</div>
+				</li>
+				<li>
+					<h4><a href="#">奇异果</a></h4>
+					<a href="#"><img src="images/goods/goods012.jpg"></a>
+					<div class="prize">¥ 25.80</div>
+				</li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -140,6 +223,7 @@
 		<div class="goods_con clearfix">
 			<div class="goods_banner fl"><img src="images/banner02.jpg"></div>
 			<ul class="goods_list fl">
+<<<<<<< HEAD
 				<c:forEach items="${list2}" var="item">
 				<li>
 					<h4><a href="DoDetail?id=${item.proId}">${item.proName}</a></h4>
@@ -147,6 +231,28 @@
 					<div class="prize">¥${item.proPrice}</div>
 				</li>
 				</c:forEach>
+=======
+				<li>
+					<h4><a href="#">青岛野生海捕大青虾</a></h4>
+					<a href="#"><img src="images/goods/goods018.jpg"></a>
+					<div class="prize">¥ 48.00</div>
+				</li>
+				<li>
+					<h4><a href="#">扇贝</a></h4>
+					<a href="#"><img src="images/goods/goods019.jpg"></a>
+					<div class="prize">¥ 46.00</div>
+				</li>
+				<li>
+					<h4><a href="#">冷冻秋刀鱼</a></h4>
+					<a href="#"><img src="images/goods/goods020.jpg"></a>
+					<div class="prize">¥ 19.00</div>
+				</li>
+				<li>
+					<h4><a href="#">基围虾</a></h4>
+					<a href="#"><img src="images/goods/goods021.jpg"></a>
+					<div class="prize">¥ 25.00</div>
+				</li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -166,6 +272,7 @@
 		<div class="goods_con clearfix">
 			<div class="goods_banner fl"><img src="images/banner03.jpg"></div>
 			<ul class="goods_list fl">
+<<<<<<< HEAD
 				<c:forEach items="${list3}" var="item">
 				<li>
 					<h4><a href="DoDetail?id=${item.proId}">${item.proName}</a></h4>
@@ -173,6 +280,28 @@
 					<div class="prize">¥${item.proPrice}</div>
 				</li>
 				</c:forEach>
+=======
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -192,6 +321,7 @@
 		<div class="goods_con clearfix">
 			<div class="goods_banner fl"><img src="images/banner04.jpg"></div>
 			<ul class="goods_list fl">
+<<<<<<< HEAD
 				<c:forEach items="${list4}" var="item">
 				<li>
 					<h4><a href="DoDetail?id=${item.proId}">${item.proName}</a></h4>
@@ -199,6 +329,28 @@
 					<div class="prize">¥${item.proPrice}</div>
 				</li>
 				</c:forEach>
+=======
+				<li>
+					<h4><a href="#">维多利亚葡萄维多利亚葡萄维多利亚葡萄维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -218,6 +370,7 @@
 		<div class="goods_con clearfix">
 			<div class="goods_banner fl"><img src="images/banner05.jpg"></div>
 			<ul class="goods_list fl">
+<<<<<<< HEAD
 				<c:forEach items="${list5}" var="item">
 				<li>
 					<h4><a href="DoDetail?id=${item.proId}">${item.proName}</a></h4>
@@ -225,6 +378,28 @@
 					<div class="prize">¥${item.proPrice}</div>
 				</li>
 				</c:forEach>
+=======
+				<li>
+					<h4><a href="#">维多利亚葡萄维多利亚葡萄维多利亚葡萄维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -244,6 +419,7 @@
 		<div class="goods_con clearfix">
 			<div class="goods_banner fl"><img src="images/banner06.jpg"></div>
 			<ul class="goods_list fl">
+<<<<<<< HEAD
 			<c:forEach items="${list6}" var="item">
 				<li>
 					<h4><a href="DoDetail?id=${item.proId}">${item.proName}</a></h4>
@@ -251,6 +427,28 @@
 					<div class="prize">¥${item.proPrice}</div>
 				</li>
 				</c:forEach>
+=======
+				<li>
+					<h4><a href="#">维多利亚葡萄维多利亚葡萄维多利亚葡萄维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚葡萄</a></h4>
+					<a href="#"><img src="images/goods.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -271,7 +469,12 @@
 	<script type="text/javascript" src="js/slideshow.js"></script>
 	<script type="text/javascript">
 		$(function () {
+<<<<<<< HEAD
 			if($(".login_info1").html()!=""){				
+=======
+			if($(".login_info1").html()!=""){
+				
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				$(".login_info").show();
 			}
 		})

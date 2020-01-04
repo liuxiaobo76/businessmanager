@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
+<<<<<<< HEAD
 <script src="js/jquery.min.js"></script>
 <script src="js/jq-slideVerify.js" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" href="css/jquery.slider.css" />
@@ -37,6 +38,12 @@
 <body>
 	<div class="login_top clearfix">
 		<a href="DoIndex" class="login_logo"><img
+=======
+</head>
+<body>
+	<div class="login_top clearfix">
+		<a href="index.html" class="login_logo"><img
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			src="images/logo02.png"></a>
 	</div>
 
@@ -50,7 +57,11 @@
 					<a href="register.jsp">立即注册</a>
 				</div>
 				<div class="form_input">
+<<<<<<< HEAD
 					<form >
+=======
+					<form action="DoLogin" method="post">
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 						<input type="text" name="username" class="name_input"
 							placeholder="请输入用户名">
 						<div class="user_error">输入错误</div>
@@ -59,10 +70,16 @@
 						<div class="pwd_error">输入错误</div>
 						<div class="more_input clearfix">
 							<input type="checkbox" name=""> <label>记住用户名</label> <a
+<<<<<<< HEAD
 								href="Demo.jsp">忘记密码</a>
 						</div>
 						<input type="submit"  >
 						<div id="slider2" class="slider" style="position:absolute;left:0;top:180px;"></div>
+=======
+								href="#">忘记密码</a>
+						</div>
+						<input type="submit" name="" value="登录" class="input_submit">
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 					</form>
 				</div>
 			</div>
@@ -82,7 +99,10 @@
 
 			var error_name = false;
 			var error_password = false;
+<<<<<<< HEAD
 			var flag = false;
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			$(".name_input").blur(function() {
 				check_user_name();
 			});
@@ -90,9 +110,21 @@
 			$(".pass_input").blur(function() {
 				check_pwd();
 			});
+<<<<<<< HEAD
 			
 			
 			
+=======
+
+			$('#cpwd').blur(function() {
+				check_cpwd();
+			});
+
+			$('#email').blur(function() {
+				check_email();
+			});
+				
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			
 
 			function check_user_name() {
@@ -101,11 +133,17 @@
 					$(".name_input").next().html('请输入用户名')
 					$(".name_input").next().show();
 					error_name = true;
+<<<<<<< HEAD
 					$("#slider2").slider("restore");
 				} else {
 					$(".name_input").next().hide();
 					error_name = false;
 				
+=======
+				} else {
+					$(".name_input").next().hide();
+					error_name = false;
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				}
 			}
 
@@ -115,6 +153,7 @@
 					$(".pass_input").next().html('密码最少6位，最长20位')
 					$(".pass_input").next().show();
 					error_password = true;
+<<<<<<< HEAD
 					$("#slider2").slider("restore");
 				} else {
 					$(".pass_input").next().hide();
@@ -169,6 +208,35 @@
 					
 					}
 				});
+=======
+				} else {
+					$(".pass_input").next().hide();
+					error_password = false;
+				}
+			}
+			
+			
+
+			$("form").submit(function() {
+						 var user_pwd_error=false;
+				var pwd=$(".pass_input").val();
+				var name=$(".name_input").val();
+				if (pwd==""&name=="") {
+					error_name = true;
+					$(".pass_input").next().html('密码最少6位，最长20位')
+					$(".pass_input").next().show();
+					error_password = true;
+					$(".name_input").next().html('请输入用户名')
+					$(".name_input").next().show();
+					return false;
+				}else{	
+					return true;
+					 $("form").submit();
+					
+				}
+				
+			});
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 		})
 	</script>

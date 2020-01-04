@@ -1,6 +1,7 @@
 package cn.com.kgc.tancoo.businessmanager.dao.impl;
 
 import java.sql.SQLException;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,12 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
+=======
+import java.util.List;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 import org.junit.Test;
 
 import cn.com.kgc.tancoo.businessmanager.dao.AdminDao;
@@ -77,6 +84,7 @@ public class AdminDaoImpl implements AdminDao{
 	public void ddd() {
 		System.out.println(update(new Admin(3, "ha", "123456", 2,"普通管理员")));
 	}
+<<<<<<< HEAD
 	@Override
 	public Admin login(String adminName, String adminPwd) {
 		String sql="select * from admin where adminName=? and adminPwd=?";
@@ -177,4 +185,6 @@ public class AdminDaoImpl implements AdminDao{
 			return 0;
 		}
 	}
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

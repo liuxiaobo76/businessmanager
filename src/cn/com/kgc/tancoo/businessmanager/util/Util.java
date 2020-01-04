@@ -4,6 +4,7 @@ import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+<<<<<<< HEAD
 import org.junit.Test;
 
 import com.ucpaas.restDemo.client.AbsRestClient;
@@ -11,6 +12,9 @@ import com.ucpaas.restDemo.client.JsonReqClient;
 
 public class Util {
 	private static int id;
+=======
+public class Util {
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 	 /**
 	    * 将短时间格式时间转换为字符串 yyyy-MM-dd
 	    * 
@@ -35,6 +39,7 @@ public class Util {
 	    Date strtodate = formatter.parse(strDate, pos);
 	    return strtodate;
 	}
+<<<<<<< HEAD
 	 public static String dateToStr1(Date dateDate) {
 		    SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd");
 		    String dateString = formatter.format(dateDate);
@@ -97,4 +102,6 @@ public class Util {
 		System.out.println(getRandom());
 	}
 	 
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

@@ -1,6 +1,10 @@
 body{font-family:'Microsoft Yahei';font-size:12px;color:#666;}
 html,body{height:100%}
+<<<<<<< HEAD
 /* é¡¶éƒ¨æ ·å¼ */
+=======
+/* ¶¥²¿ÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 .header_con{
 	background-color:#f7f7f7;
 	height:29px;
@@ -37,7 +41,11 @@ html,body{height:100%}
 }
 
 
+<<<<<<< HEAD
 /* logoã€æœç´¢æ¡†ã€è´­ç‰©è½¦æ ·å¼ */
+=======
+/* logo¡¢ËÑË÷¿ò¡¢¹ºÎï³µÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .search_bar{width:1200px;height:115px;margin:0 auto;}
 .logo{width:150px;height:59px;margin:29px 0 0 17px;}
@@ -63,7 +71,11 @@ html,body{height:100%}
 }
 
 
+<<<<<<< HEAD
 /* èœå•ã€å¹»ç¯ç‰‡æ ·å¼ */
+=======
+/* ²Ëµ¥¡¢»ÃµÆÆ¬ÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .navbar_con{height:40px;border-bottom:2px solid #39a93e}
 .navbar{width:1200px;margin:0 auto;}
@@ -116,7 +128,11 @@ html,body{height:100%}
 .adv a{display:block;float:left;}
 
 
+<<<<<<< HEAD
 /* å•†å“åˆ—è¡¨æ ·å¼ */
+=======
+/* ÉÌÆ·ÁÐ±íÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .list_model{width:1200px;height:340px;margin:15px auto 0;}
 .list_title{height:40px;border-bottom:2px solid #42ad46}
@@ -143,7 +159,11 @@ html,body{height:100%}
 .goods_list li img{display:block;width:180px;height:180px;margin:0 auto;}
 .goods_list li .prize{text-align:center;font-size:20px;color:#c40000;margin-top:5px;}
 
+<<<<<<< HEAD
 /* é¡µé¢åº•éƒ¨æ ·å¼ */
+=======
+/* Ò³Ãæµ×²¿ÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 .footer{
 	border-top:2px solid #42ad46;
 	margin:30px 0;
@@ -156,7 +176,11 @@ html,body{height:100%}
 .footer p{text-align:center; margin-top:10px;}
 
 
+<<<<<<< HEAD
 /* äºŒçº§é¡µé¢é¢åŒ…å±‘å¯¼èˆª */
+=======
+/* ¶þ¼¶Ò³ÃæÃæ°üÐ¼µ¼º½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 .breadcrumb{
 	width:1200px;height:40px;margin:0 auto;
 }
@@ -170,7 +194,11 @@ html,body{height:100%}
 .r_wrap{width:980px;}
 
 
+<<<<<<< HEAD
 /* æ–°å“æŽ¨èæ ·å¼ */
+=======
+/* ÐÂÆ·ÍÆ¼öÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .new_goods{
 	border:1px solid #ededed;
@@ -191,7 +219,11 @@ html,body{height:100%}
 
 
 
+<<<<<<< HEAD
 /* å•†å“åˆ—è¡¨æ ·å¼ */
+=======
+/* ÉÌÆ·ÁÐ±íÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .sort_bar{height:30px;background-color:#f0fdec}
 .sort_bar a{display:block;height:30px;line-height:30px;padding:0 20px;float:left;color:#000}
@@ -217,7 +249,11 @@ html,body{height:100%}
 .goods_type_list .operate .add_goods{display:inline-block;width:15px;height:15px;background:url(../images/shop_cart.png);position:absolute;right:0;top:3px;}
 
 
+<<<<<<< HEAD
 /* åˆ†é¡µæ ·å¼ */
+=======
+/* ·ÖÒ³ÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .pagenation{height:32px;text-align:center;font-size:0;margin:30px auto;}
 .pagenation a{display:inline-block;border:1px solid #d2d2d2;background-color:#f8f6f7;font-size:12px;padding:7px 10px;color:#666;margin:5px}
@@ -225,7 +261,11 @@ html,body{height:100%}
 .pagenation .active{background-color:#fff;color:#43a200}
 
 
+<<<<<<< HEAD
 /* å•†å“è¯¦æƒ…æ ·å¼ */
+=======
+/* ÉÌÆ·ÏêÇéÑùÊ½ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 .goods_detail_con{
 	width:1198px;
 	height:398px;
@@ -273,7 +313,11 @@ html,body{height:100%}
 .tab_content dd{line-height:24px;margin-top:5px;}
 
 
+<<<<<<< HEAD
 /* ç™»å½•é¡µ */
+=======
+/* µÇÂ¼Ò³ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 .login_top{width:960px;height:130px;margin:0 auto;}
 .login_logo{display:block;width:193px;height:76px;margin-top:30px;}
@@ -306,7 +350,12 @@ html,body{height:100%}
 
 .input_submit{width:100%;height:40px;position:absolute;left:0;top:180px;background-color:#47aa34;color:#fff;font-size:22px;border:0px;font-family:'Microsoft Yahei';cursor:pointer;}
 
+<<<<<<< HEAD
 /* æ³¨å†Œé¡µé¢ */
+=======
+
+/* ×¢²áÒ³Ãæ */
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 .register_con{
 	width:700px;
 	height:560px;
@@ -332,7 +381,10 @@ html,body{height:100%}
 .reg_form li.agreement input{width:15px;height:15px;float:left;margin-top:13px}
 .reg_form li.agreement label{width:300px;float:left;margin-left:10px;}
 .reg_form li.reg_sub input{width:360px;height:40px;background-color:#47aa34;font-size:18px;color:#fff;font-family:'Microsoft Yahei';cursor:pointer;}
+<<<<<<< HEAD
 .reg_form li #userSex select{}
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 .reg_form li .error_tip{float:left;height:30px;line-height:30px;margin-left:70px;color:#e62e2e;display:none;}
 .reg_form li .error_tip2{float:left;height:20px;line-height:20px;color:#e62e2e;display:none;}
 

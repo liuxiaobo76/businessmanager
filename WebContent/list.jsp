@@ -19,6 +19,7 @@
 		<div class="header">
 			<div class="welcome fl">欢迎来到天天生鲜!</div>
 			<div class="fr">
+<<<<<<< HEAD
 				<c:if test="${!empty user }">
 				<div class="login_info fl">
 					欢迎您：<em class="login_info1">${user.userName}&nbsp;</em>
@@ -30,16 +31,31 @@
 					<c:if test="${empty user}">
 					<a href="login.jsp">登录</a>
 					</c:if>
+=======
+				<div class="login_info fl">
+					欢迎您：<em>张 山</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="login.jsp">登录</a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 					<span>|</span>
 					<a href="register.jsp">注册</a>
 				</div>
 				<div class="user_link fl">
 					<span>|</span>
+<<<<<<< HEAD
 					<a href="DoUser_center_info">用户中心</a>
 					<span>|</span>
 					<a href="DoCart">我的购物车</a>
 					<span>|</span>
 					<a href="DoUser_center_order">我的订单</a>
+=======
+					<a href="user_center_info.html">用户中心</a>
+					<span>|</span>
+					<a href="cart.html">我的购物车</a>
+					<span>|</span>
+					<a href="user_center_order.html">我的订单</a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				</div>
 			</div>
 		</div>		
@@ -47,6 +63,7 @@
 
 	<div class="search_bar clearfix">
 		<a href="DoIndex" class="logo fl"><img src="images/logo.png"/></a>
+<<<<<<< HEAD
 		<form action="DoList" method="post">
 		<div class="search_con fl">
 			<input type="text" class="input_text fl" name="search" placeholder="搜索商品"/>
@@ -57,6 +74,18 @@
 		<div class="guest_cart fr">
 			<a href="DoCart" class="cart_name fl">我的购物车</a>
 			<div class="goods_count fl" id="show_count">${size }</div>
+=======
+		<div class="search_con fl">
+			<form action="DoList" method="post">
+			<input type="text" class="input_text fl" name="search" value="${search}" placeholder="搜索商品" />
+			<input type="hidden" name="pageindex" value="1" />
+			<input type="submit" class="input_btn fr" name="" value="搜索" />
+			</form>
+		</div>
+		<div class="guest_cart fr">
+			<a href="#" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl">1</div>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		</div>
 	</div>
 
@@ -77,9 +106,15 @@
 			<ul class="navlist fl">
 				<li><a href="">首页</a></li>
 				<li class="interval">|</li>
+<<<<<<< HEAD
 				<li><a href="index1.jsp">商家登陆</a></li>
 				<li class="interval">|</li>
 				<li><a href="HOUTAI/login.jsp">管理员登陆</a></li>
+=======
+				<li><a href="">手机生鲜</a></li>
+				<li class="interval">|</li>
+				<li><a href="">抽奖</a></li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</ul>
 		</div>
 	</div>
@@ -112,6 +147,11 @@
 		<div class="r_wrap fr clearfix">
 			<div class="sort_bar">
 				<a href="#" class="active">默认</a>
+<<<<<<< HEAD
+=======
+				<a href="#">价格</a>
+				<a href="#">人气</a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			</div>
 
 			<ul class="goods_type_list clearfix">
@@ -162,11 +202,14 @@
 		<p>电话：010-****888    京ICP备*******8号</p>
 	</div>
 	<script type="text/javascript">
+<<<<<<< HEAD
 	$(function () {
 		if($(".login_info1").html()!=""){				
 			$(".login_info").show();
 		}
 	})
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		$(function (){
 			$("#firstpage").click(function(){
 				$("[name='pageindex']").val(1);

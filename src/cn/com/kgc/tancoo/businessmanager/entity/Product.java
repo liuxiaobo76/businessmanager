@@ -17,6 +17,7 @@ public class Product {
 	private double proPrice;//商品价格
 	private String proParam;//商品的细节描述 用英文,分开
 	private String ptypeName;//商品类别
+<<<<<<< HEAD
 	private int proNum;//商品的数量
 	public Product(int proId, String proName, int proType, String proDescription, String proSimg, String proBimg,
 			double proPrice, String proParam, String ptypeName) {
@@ -33,4 +34,7 @@ public class Product {
 	}
 	
 	
+=======
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

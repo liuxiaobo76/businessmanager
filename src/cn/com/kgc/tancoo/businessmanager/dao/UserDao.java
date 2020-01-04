@@ -41,6 +41,7 @@ public interface UserDao {
 	 * @return
 	 */
 	int update (User user);
+<<<<<<< HEAD
 	 /**
 	   * 验证手机号
 	 */
@@ -60,5 +61,9 @@ public interface UserDao {
 	 * @return
 	 */
 	public User userNameQreuery(String userName);
+=======
+
+	
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 	
 }

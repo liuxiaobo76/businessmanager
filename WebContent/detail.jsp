@@ -15,6 +15,7 @@
 		<div class="header">
 			<div class="welcome fl">欢迎来到天天生鲜!</div>
 			<div class="fr">
+<<<<<<< HEAD
 				<c:if test="${!empty user }">
 				<div class="login_info fl">
 					欢迎您：<em class="login_info1">${user.userName}&nbsp;</em>
@@ -36,12 +37,30 @@
 					<a href="DoCart">我的购物车</a>
 					<span>|</span>
 					<a href="DoUser_center_order">我的订单</a>
+=======
+				<div class="login_info fl">
+					欢迎您：<em>张 山</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="DoLogin">登录</a>
+					<span>|</span>
+					<a href="register.html">注册</a>
+				</div>
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="user_center_info.html">用户中心</a>
+					<span>|</span>
+					<a href="cart.jsp">我的购物车</a>
+					<span>|</span>
+					<a href="user_center_order.html">我的订单</a>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				</div>
 			</div>
 		</div>		
 	</div>
 
 	<div class="search_bar clearfix">
+<<<<<<< HEAD
 		<a href="DoIndex" class="logo fl"><img src="images/logo.png"/></a>
 		<form action="DoList" method="post">
 		<div class="search_con fl">
@@ -52,6 +71,16 @@
 		<div class="guest_cart fr">
 			<a href="DoCart" class="cart_name fl">我的购物车</a>
 			<div class="goods_count fl" id="show_count">${size }</div>
+=======
+		<a href="index.html" class="logo fl"><img src="images/logo.png"/></a>
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="" placeholder="搜索商品"/>
+			<input type="button" class="input_btn fr" name="" value="搜索"/>
+		</div>
+		<div class="guest_cart fr">
+			<a href="cart.jsp" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl" id="show_count">0</div>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		</div>
 	</div>
 
@@ -165,12 +194,16 @@
 	<div class="add_jump"></div>
 
 	<script type="text/javascript">
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		var $add_x = $('#add_cart').offset().top;
 		var $add_y = $('#add_cart').offset().left;
 
 		var $to_x = $('#show_count').offset().top;
 		var $to_y = $('#show_count').offset().left;
+<<<<<<< HEAD
 		$(function () {
 			if($(".login_info1").html()!=""){				
 				$(".login_info").show();
@@ -191,6 +224,11 @@
                 }
             });
 
+=======
+
+		$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'})
+		$('#add_cart').click(function(){
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			$(".add_jump").stop().animate({
 				'left': $to_y+7,
 				'top': $to_x+7},
@@ -206,14 +244,22 @@
 				var num = $(this).prev().val();
 				$(this).prev().val(parseInt(num) + 1);
 				var price = $(".show_pirze").children().html();
+<<<<<<< HEAD
 				$(".total").children().html(((parseInt(num)+1)*price).toFixed(2)+"元");
+=======
+				$(".total").children().html((parseInt(num)+1)*price+"元");
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			})
 			$(".minus").click(function() {
 				var num = $(this).prev().prev().val();
 				if(num>1){
 					$(this).prev().prev().val(parseInt(num) - 1);
 					var price = $(".show_pirze").children().html();
+<<<<<<< HEAD
 					$(".total").children().html(((parseInt(num)-1)*price).toFixed(2)+"元");
+=======
+					$(".total").children().html((parseInt(num)-1)*price+"元");
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				}						
 				 
 			})
@@ -221,8 +267,13 @@
 				$(location).attr("href", "DoPlace_order?id="+$('.pro_id').val()+"&number="+$('.num_show').val());
 			})
 		})
+<<<<<<< HEAD
 	
 		
+=======
+		
+			
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 	</script>
 	

@@ -1,10 +1,13 @@
 package cn.com.kgc.tancoo.businessmanager.servlet;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+<<<<<<< HEAD
 import cn.com.kgc.tancoo.businessmanager.entity.Order;
 import cn.com.kgc.tancoo.businessmanager.entity.Product;
 import cn.com.kgc.tancoo.businessmanager.entity.ShoppingTrolley;
@@ -21,6 +25,11 @@ import cn.com.kgc.tancoo.businessmanager.server.impl.OrderServerImpl;
 import cn.com.kgc.tancoo.businessmanager.server.impl.ProductServerImpl;
 import cn.com.kgc.tancoo.businessmanager.server.impl.ShoppingTrolleyServerImpl;
 import cn.com.kgc.tancoo.businessmanager.util.Util;
+=======
+import cn.com.kgc.tancoo.businessmanager.entity.Product;
+import cn.com.kgc.tancoo.businessmanager.entity.User;
+import cn.com.kgc.tancoo.businessmanager.server.impl.ProductServerImpl;
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 
 /**
  * Servlet implementation class DoPlace_order
@@ -35,6 +44,7 @@ public class DoPlace_order extends HttpServlet {
 		User user = (User) session.getAttribute("user");//用户的登陆账号
 		ProductServerImpl pri = new ProductServerImpl();
 		String sid = request.getParameter("id");//（商品）订单编号
+<<<<<<< HEAD
 		String listId = request.getParameter("listId");//商品编号
 		PrintWriter out = response.getWriter();
 		
@@ -64,10 +74,13 @@ public class DoPlace_order extends HttpServlet {
 		 * request.getRequestDispatcher("place_order.jsp").forward(request, response); }
 		 */
 		//从商品细节上跳转过来
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		if(sid!=null) {
 			int id = Integer.parseInt(sid);
 			Product product = pri.getById(id);
 			request.setAttribute("product", product);
+<<<<<<< HEAD
 			String number= request.getParameter("number");
 			int num = Integer.parseInt(number);
 			request.setAttribute("number", number);
@@ -87,6 +100,11 @@ public class DoPlace_order extends HttpServlet {
 			osi.add(order);
 		}
 		
+=======
+		}
+		String number= request.getParameter("number");
+		request.setAttribute("number", number);
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		request.getRequestDispatcher("place_order.jsp").forward(request, response);
 	
 	}

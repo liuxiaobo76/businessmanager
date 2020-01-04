@@ -27,6 +27,7 @@ public interface AdminServer {
 	 * @param id 要修改的管理员的编号
 	 * @return
 	 */
+<<<<<<< HEAD
 	Admin login(String adminName,String adminPwd);
 	List<Admin> getAll(String adminName,int currentPage,int pageCount);
 	int getCount(String adminName);
@@ -37,4 +38,7 @@ public interface AdminServer {
 	int updateAdmin(Admin a);
 	int update(Admin adm);
 	
+=======
+	int update(Admin ad);
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

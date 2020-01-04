@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<<<<<<< HEAD
 <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
  <style>
@@ -30,6 +31,9 @@
         }
        
     </style>
+=======
+<script type="text/javascript" src="js/register.js"></script>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 </head>
 <body>
 	<div class="register_con">
@@ -44,12 +48,18 @@
 				<h1>用户注册</h1>
 				<a href="login.jsp">登录</a>
 			</div>
+<<<<<<< HEAD
 			<div class="reg_form clearfix">                                
 				<form name="reg_testdate" action="Doregister">				
+=======
+			<div class="reg_form clearfix">
+				<form name="reg_testdate">
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 					<ul>
 						<li><label>用户名:</label> <input type="text" name="user_name"
 							id="user_name"> <span class="error_tip">提示信息</span></li>
 
+<<<<<<< HEAD
 						
 						<li>
 						<label>密码:</label> <input type="password" name="pwd"
@@ -97,11 +107,55 @@
 							<input  style="height: 40px;width:93px;color: #a8a8a8;background-color: #f8f8f8;float:left" type="button" id="btn" value="获取验证码"  id=btn> 
 							<span id=error_tip  style=color:red></span>
 							</li>
+=======
+						<li><label>地址:</label> <input type=text name=userAddr><span
+							id=addryz></span></li>
+						<li><label>真实姓名:</label> <input type=text name=userTruename>
+						</li>
+						<li><label>性别:</label> <select name=userSex>
+								<option value="volvo">--请选择--</option>
+								<option value="男">男</option>
+								<option value="女">女</option>
+						</select><span id=uesr_sex></span>
+						
+						<label>买家/卖家:</label> <select name=userSex>
+								<option value="volvo">--请选择--</option>
+								<option value="买家">买家</option>
+								<option value="卖家">卖家</option>
+						</select><span id=uesr_sex></span>
+						
+						</li>
+						 <li>
+						 <label>选择出生年月</label>
+						   <select name="YYYY" onchange="YYYYDD(this.value)">
+   							 <option value="">请选择 年</option>
+  								</select>
+ 								 <select name="MM" onchange="MMDD(this.value)">
+   									 <option value="">选择 月</option>
+  								</select>
+								 <select name="DD">
+    							<option value="">选择 日</option>
+  								</select>
+						 
+						 </li>
+						
+						
+						<li><label>手机号:</label> <input type="text" name="phone"
+							id="phone"> <span class="error_tip">提示信息</span></li>
+						<li><label>密码:</label> <input type="password" name="pwd"
+							id="pwd"> <span class="error_tip">提示信息</span></li>
+						<li><label>确认密码:</label> <input type="password" name="cpwd"
+							id="cpwd"> <span class="error_tip">提示信息</span></li>
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 						<li class="agreement"><input type="checkbox" name="allow"
 							id="allow" checked="checked"> <label>同意”天天生鲜用户使用协议“</label>
 							<span class="error_tip2">提示信息</span></li>
 
+<<<<<<< HEAD
 						<li class="reg_sub"><input type="submit" value="注 册" name="" id=sub>
+=======
+						<li class="reg_sub"><input type="submit" value="注 册" name="">
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 						</li>
 
 					</ul>
@@ -126,23 +180,33 @@
 			var error_name = false;
 			var error_password = false;
 			var error_check_password = false;
+<<<<<<< HEAD
 			var error_check = false;
 			var error_sex=false;
 			var error_phone=false;
 			var error_yzm=false;
 			
+=======
+
+			var error_check = false;
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			$('#user_name').blur(function() {
 				check_user_name();
 			});
 
 			$('#pwd').blur(function() {
 				check_pwd();
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			});
 
 			$('#cpwd').blur(function() {
 				check_cpwd();
 			});
+<<<<<<< HEAD
 			
 			$("#phone").blur(function() {
 				check_phone();
@@ -204,6 +268,13 @@
 					})
 				}
 			}
+=======
+
+			$('#email').blur(function() {
+				check_email();
+			});
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 			$('#allow').click(function() {
 				if ($(this).is(':checked')) {
 					error_check = false;
@@ -224,6 +295,10 @@
 					error_name = true;
 				} else {
 					var name = $('#user_name').val();
+<<<<<<< HEAD
+=======
+					
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 					$.post("DoLogin", "opr=yzUser&name=" + name, function(data) {
 						if (data == 1) {
 							$('#user_name').next().html('用户名已被使用')
@@ -239,8 +314,13 @@
 
 			function check_pwd() {
 				var len = $('#pwd').val().length;
+<<<<<<< HEAD
 				if (len<6||len>20) {
 					$('#pwd').next().html('密码最少6位，最长20位')
+=======
+				if (len<8||len>20) {
+					$('#pwd').next().html('密码最少8位，最长20位')
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 					$('#pwd').next().show();
 					error_password = true;
 				} else {
@@ -252,6 +332,10 @@
 			function check_cpwd() {
 				var pass = $('#pwd').val();
 				var cpass = $('#cpwd').val();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 				if (pass != cpass) {
 					$('#cpwd').next().html('两次输入的密码不一致')
 					$('#cpwd').next().show();
@@ -259,6 +343,7 @@
 				} else {
 					$('#cpwd').next().hide();
 					error_check_password = false;
+<<<<<<< HEAD
 					return false;
 				}
 			}
@@ -304,6 +389,47 @@
 			
 			
 			
+=======
+				}
+
+			}
+
+			function check_email() {
+				var re = /^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$/;
+
+				if (re.test($('#email').val())) {
+					$('#email').next().hide();
+					error_email = false;
+				} else {
+					$('#email').next().html('你输入的邮箱格式不正确')
+					$('#email').next().show();
+					error_check_password = true;
+				}
+
+			}
+
+			$('#reg_form')
+					.submit(
+							function() {
+								check_user_name();
+								check_pwd();
+								check_cpwd();
+								check_email();
+
+								if (error_name == false
+										&& error_password == false
+										&& error_check_password == false
+										&& error_email == false
+										&& error_check == false) {
+									return true;
+								} else {
+									return false;
+								}
+
+							});
+			
+
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 		})
 	</script>
 	<script language="JavaScript"><!--   

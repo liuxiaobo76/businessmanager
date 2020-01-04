@@ -28,10 +28,13 @@ public interface ShoppingTrolleyServer {
 	 * @return
 	 */
 	int update(ShoppingTrolley st);
+<<<<<<< HEAD
 	/**
 	 * 查找购物车
 	 * 根据用户编号查找购物车
 	 * @return
 	 */
 	List<ShoppingTrolley> getAlById(int userId);
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

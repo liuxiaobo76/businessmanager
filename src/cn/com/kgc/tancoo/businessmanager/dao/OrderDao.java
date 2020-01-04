@@ -11,6 +11,7 @@ public interface OrderDao {
 	 */
 	List<Order> getAll();
 	/**
+<<<<<<< HEAD
 	 * 获取个人的全部信息
 	 * @param id 用户编号
 	 * @param pageindex 第几页
@@ -19,6 +20,8 @@ public interface OrderDao {
 	 */
 	List<Order> getAllById(int id,int pageindex,int pagecount);
 	/**
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 	 * 添加订单
 	 * @param ord 要添加的订单
 	 * @return
@@ -30,11 +33,15 @@ public interface OrderDao {
 	 * @return
 	 */
 	int delete(int id);
+<<<<<<< HEAD
 	/**
 	 * 获取该用户的总条数
 	 * @param id
 	 * @return
 	 */
 	int getCount(int id);
+=======
+	//int Update(Product pro);
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 	
 }

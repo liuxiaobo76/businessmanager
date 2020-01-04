@@ -73,6 +73,7 @@ public class ShoppingTrolleyDaoImpl implements ShopingTrolleyDao{
 	public void test4() {
 		System.out.println(update(new ShoppingTrolley(1, 3, 3, new Date())));
 	}
+<<<<<<< HEAD
 	@Override
 	public List<ShoppingTrolley> getAlById(int userId) {
 		String sql = "SELECT * FROM shoppingTorlley where userId = ?";
@@ -90,3 +91,6 @@ public class ShoppingTrolleyDaoImpl implements ShopingTrolleyDao{
 	}
 }
 
+=======
+}
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808

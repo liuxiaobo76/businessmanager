@@ -28,6 +28,7 @@ public interface AdminDao {
 	 * @return
 	 */
 	int update(Admin ad);
+<<<<<<< HEAD
 	Admin login(String adminName,String adminPwd);
 	List<Admin> getAll(String adminName,int currentPage,int pageCount);
 	int getCount(String adminName);
@@ -36,4 +37,6 @@ public interface AdminDao {
 	int checkName(String Aname);
 	Admin queryAdminById(int id);
 	int updateAdmin(Admin a);
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }

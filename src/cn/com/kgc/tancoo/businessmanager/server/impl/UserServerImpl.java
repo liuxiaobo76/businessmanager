@@ -40,6 +40,7 @@ public class UserServerImpl implements UserServer {
 		return udi.update(user);
 	}
 
+<<<<<<< HEAD
 	@Override
 	public int queryPhone(String phone) {
 		return udi.queryPhone(phone);
@@ -86,4 +87,6 @@ public class UserServerImpl implements UserServer {
 	}
 
 
+=======
+>>>>>>> 0687210869020c79e5144e895f192ac4bd75a808
 }
